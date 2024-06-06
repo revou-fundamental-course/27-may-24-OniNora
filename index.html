@@ -1,9 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Portofolio Vincent</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portofolio</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <nav>
+            <div class="logo-icon"></div>
 
+            <section class="nav-container">
+                <a class="nav-item" href="#home">Home</a>
+                <a class="nav-item" href="#profile">My Profile</a>
+                <a class="nav-item" href="#courses">My Courses</a>
+                <a class="nav-item" href="#message-me">Message Me</a>
+            </section>
+        </nav>
+
+        <section class="section-container">
+            <!-- Home -->
+            <section id="home">
+                <header>
+                    <h1 class="h1-header">Hi <span id="user-name"></span>, Welcome to My Website</h1>
+                </header>
+
+                <article>
+                    <p>Ini adalah website pertama saya</p>
+                    
+                    <div class="banner-container">
+                        <img class="img-slide" src="/assets/image1.webp">
+                        <img class="img-slide" src="/assets/image2.png">
+                        <img class="img-slide" src="/assets/image3.jpg">
+                    </div>
+                </article>
+            </section>
+
+            <hr>
+
+            <section id="profile">
+                <header>
+                    <h1>My Profile</h1>
+                </header>
+
+                <article class="profile-content">
+                    <div>
+                        <h3>My Name is Vincent Junico Gunawan</h3>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, eum dolorem aliquam, eligendi sed debitis est, officiis velit laudantium necessitatibus alias totam deleniti sapiente! Mollitia quod repellendus ducimus veniam deleniti.</p>
+                    </div>
+                </article>
+            </section>
+
+            <hr>
+
+            <!-- Our facilities -->
+            <section id="courses">
+                <header>
+                    <h1>My Courses</h1>
+                </header>
+
+                <article class="courses-list">
+                    <div class="courses-list-item1">
+                        <div class="course1-image"></div>
+                        <h4>Fundamental Web</h4>
+                    </div>
+                    
+                    <div class="courses-list-item2">
+                        <div class="course2-image"></div>
+                        <h4>Fundamental DBMS</h4>
+                    </div>
+                    
+                    <div class="courses-list-item3">
+                        <div class="course3-image"></div>
+                        <h4>Beginner Golang</h4>
+                    </div>
+
+                    <div class="courses-list-item4">
+                        <div class="course4-image"></div>
+                        <h4>Beginner Oracle &#40In Progress&#41</h4>
+                    </div>
+                </article>
+            </section>
+
+            <hr>
+
+            <!-- Message Me -->
+            <section id="message-me">
+                <header>
+                    <h1>Message Me</h1>
+                </header>
+
+                <section class="message-me-section">
+                    <!-- Form -->
+                    <section>
+                        <form class="form-input">
+                            <table>
+                                <tr>
+                                    <td>Nama</td>
+                                    <td>:</td>
+                                    <td><input id="form-name" type="text" placeholder="Nama"></td>
+                                </tr>
+                                <tr>
+                                    <td>Tanggal Lahir</td>
+                                    <td>:</td>
+                                    <td><input id="form-bd" type="date"></td>
+                                </tr>
+                                <tr>
+                                    <td>Jenis Kelamin</td>
+                                    <td>:</td>
+                                    <td>
+                                        <div id="form-gender">
+                                            <div>
+                                            <input id="laki-laki" type="radio" value="laki-laki" name="Jenis Kelamin">
+                                            <label for="laki-laki">Laki-laki</label>
+                                            </div>
+                                            <div>
+                                            <input id="perempuan" type="radio" value="perempuan" name="Jenis Kelamin"></input>
+                                            <label for="perempuan">Perempuan</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Pesan</td>
+                                    <td>:</td>
+                                    <td><textarea id="form-msg"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><input id="form-btn" type="submit" onclick="formValidation()"></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </section>
+
+                    <!-- Result -->
+                    <section class="result-container">
+                        <div class="form-result">
+                            <p>Nama: <span id="result-name"></span></p>
+                            <p>Tanggal Lahir: <span id="result-bd"></span></p>
+                            <p>Jenis Kelamin: <span id="result-gender"></span></p>
+                            <p>Pesan: <span id="result-msg"></span></p>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <footer>
+            <p>&copy;Vincent Junico Gunawan</p>
+        </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>
