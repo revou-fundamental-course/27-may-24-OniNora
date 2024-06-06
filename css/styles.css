@@ -61,7 +61,7 @@ nav {
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    background-image: url(/assets/revou-logo.jpg);
+    background-image: url(./assets/revou-logo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -159,7 +159,7 @@ h4 {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-image: url(/assets/Fundamental-Web.jpg);
+    background-image: url(./assets/Fundamental-Web.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -169,7 +169,7 @@ h4 {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-image: url(/assets/Fundamental-DBMS.jpg);
+    background-image: url(./assets/Fundamental-DBMS.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -179,7 +179,7 @@ h4 {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-image: url(/assets/Beginner-Golang.png);
+    background-image: url(./assets/Beginner-Golang.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -189,7 +189,7 @@ h4 {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-image: url(/assets/Beginner-Oracle.png);
+    background-image: url(./assets/Beginner-Oracle.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
