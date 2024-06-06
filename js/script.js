@@ -49,12 +49,6 @@ document.getElementById("form-btn").addEventListener("click", function(event) {
     event.preventDefault();
 })
 
-document.getElementById("date").innerText = new Date()
-
-function Date() {
-    const date = currentTime.toLocaleDateString();
-}
-
 function formValidation() {
     let nameInput = document.getElementById("form-name").value;
     let bdInput = document.getElementById("form-bd").value;
